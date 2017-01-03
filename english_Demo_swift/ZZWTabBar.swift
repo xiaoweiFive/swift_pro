@@ -15,7 +15,6 @@ protocol ZZWTabBarDelegate:NSObjectProtocol {
 
 class ZZWTabBar: UITabBar {
 
-  
     override init(frame: CGRect) {
         super.init(frame: frame)
         shadowImage = UIImage()
