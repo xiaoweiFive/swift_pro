@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17C1392A1E1D0153000BFAF9 /* QSCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C139251E1D0153000BFAF9 /* QSCImage.swift */; };
+		17C1392B1E1D0153000BFAF9 /* ZZWObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C139261E1D0153000BFAF9 /* ZZWObject.swift */; };
+		17C1392C1E1D0153000BFAF9 /* ZZWProjectCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C139281E1D0153000BFAF9 /* ZZWProjectCardCell.swift */; };
+		17C1392D1E1D0153000BFAF9 /* ZZWProjectCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C139291E1D0153000BFAF9 /* ZZWProjectCardCell.xib */; };
 		17D6626E1E1B4B19002FF28A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6626D1E1B4B19002FF28A /* AppDelegate.swift */; };
 		17D662781E1B4B19002FF28A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D662761E1B4B19002FF28A /* LaunchScreen.storyboard */; };
 		17D662831E1B4B19002FF28A /* english_Demo_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662821E1B4B19002FF28A /* english_Demo_swiftTests.swift */; };
@@ -23,8 +27,6 @@
 		17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662B01E1B5D6A002FF28A /* ZZWBaseViewController.swift */; };
 		17D662B51E1B9AC3002FF28A /* ZZWFaQiProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662B41E1B9AC3002FF28A /* ZZWFaQiProjectVC.swift */; };
 		17D662B71E1BA36D002FF28A /* ZZWHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662B61E1BA36D002FF28A /* ZZWHttpTool.swift */; };
-		17D662BB1E1BB042002FF28A /* zzwView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662BA1E1BB042002FF28A /* zzwView.swift */; };
-		17D662BD1E1BB073002FF28A /* dafsdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662BC1E1BB073002FF28A /* dafsdf.swift */; };
 		F5DE4CED403990FB64F3EB19 /* Pods_english_Demo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E727E7E015BD3E8C429A6AB5 /* Pods_english_Demo_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17C139231E1CE6A4000BFAF9 /* bridgimg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgimg.h; sourceTree = "<group>"; };
+		17C139251E1D0153000BFAF9 /* QSCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCImage.swift; sourceTree = "<group>"; };
+		17C139261E1D0153000BFAF9 /* ZZWObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWObject.swift; sourceTree = "<group>"; };
+		17C139281E1D0153000BFAF9 /* ZZWProjectCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWProjectCardCell.swift; sourceTree = "<group>"; };
+		17C139291E1D0153000BFAF9 /* ZZWProjectCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWProjectCardCell.xib; sourceTree = "<group>"; };
 		17D6626A1E1B4B19002FF28A /* english_Demo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = english_Demo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D6626D1E1B4B19002FF28A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D662771E1B4B19002FF28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,9 +74,7 @@
 		17D662AE1E1B5735002FF28A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		17D662B01E1B5D6A002FF28A /* ZZWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBaseViewController.swift; sourceTree = "<group>"; };
 		17D662B41E1B9AC3002FF28A /* ZZWFaQiProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFaQiProjectVC.swift; sourceTree = "<group>"; };
-		17D662B61E1BA36D002FF28A /* ZZWHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHttpTool.swift; sourceTree = "<group>"; };
-		17D662BA1E1BB042002FF28A /* zzwView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zzwView.swift; sourceTree = "<group>"; };
-		17D662BC1E1BB073002FF28A /* dafsdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dafsdf.swift; sourceTree = "<group>"; };
+		17D662B61E1BA36D002FF28A /* ZZWHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZZWHttpTool.swift; path = class/VC/ZZWHttpTool.swift; sourceTree = "<group>"; };
 		61138CF819C0FB8855E3BA7E /* Pods-english_Demo_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-english_Demo_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-english_Demo_swift/Pods-english_Demo_swift.release.xcconfig"; sourceTree = "<group>"; };
 		CDD1FACF208BC9F6856CFE57 /* Pods-english_Demo_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-english_Demo_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-english_Demo_swift/Pods-english_Demo_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E727E7E015BD3E8C429A6AB5 /* Pods_english_Demo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_english_Demo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +106,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17C139241E1D0153000BFAF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17C139251E1D0153000BFAF9 /* QSCImage.swift */,
+				17C139261E1D0153000BFAF9 /* ZZWObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17C139271E1D0153000BFAF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17C139281E1D0153000BFAF9 /* ZZWProjectCardCell.swift */,
+				17C139291E1D0153000BFAF9 /* ZZWProjectCardCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		17D662611E1B4B19002FF28A = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +156,9 @@
 				17D6629D1E1B4B91002FF28A /* ZZWTabBarController.swift */,
 				17D662AC1E1B53BE002FF28A /* ZZWNavigationViewController.swift */,
 				17D662B01E1B5D6A002FF28A /* ZZWBaseViewController.swift */,
-				17D662BA1E1BB042002FF28A /* zzwView.swift */,
-				17D662BC1E1BB073002FF28A /* dafsdf.swift */,
 				17D6629F1E1B4BB4002FF28A /* ZZWTabBar.swift */,
+				17D662B61E1BA36D002FF28A /* ZZWHttpTool.swift */,
+				17C139231E1CE6A4000BFAF9 /* bridgimg.h */,
 				17D662A31E1B4C39002FF28A /* Extension */,
 				17D662761E1B4B19002FF28A /* LaunchScreen.storyboard */,
 				17D662791E1B4B19002FF28A /* Info.plist */,
@@ -174,6 +197,8 @@
 		17D662A81E1B5295002FF28A /* class */ = {
 			isa = PBXGroup;
 			children = (
+				17C139241E1D0153000BFAF9 /* Model */,
+				17C139271E1D0153000BFAF9 /* View */,
 				17D662A91E1B5295002FF28A /* VC */,
 			);
 			path = class;
@@ -184,7 +209,6 @@
 			children = (
 				17D662AA1E1B52A9002FF28A /* ZZWHomeViewController.swift */,
 				17D662B41E1B9AC3002FF28A /* ZZWFaQiProjectVC.swift */,
-				17D662B61E1BA36D002FF28A /* ZZWHttpTool.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -316,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C1392D1E1D0153000BFAF9 /* ZZWProjectCardCell.xib in Resources */,
 				17D662781E1B4B19002FF28A /* LaunchScreen.storyboard in Resources */,
 				17D6629C1E1B4B32002FF28A /* Assets.xcassets in Resources */,
 			);
@@ -392,16 +417,17 @@
 			files = (
 				17D662A71E1B4F27002FF28A /* UIView+Extension.swift in Sources */,
 				17D662B71E1BA36D002FF28A /* ZZWHttpTool.swift in Sources */,
+				17C1392A1E1D0153000BFAF9 /* QSCImage.swift in Sources */,
+				17C1392C1E1D0153000BFAF9 /* ZZWProjectCardCell.swift in Sources */,
 				17D662B51E1B9AC3002FF28A /* ZZWFaQiProjectVC.swift in Sources */,
 				17D662AB1E1B52A9002FF28A /* ZZWHomeViewController.swift in Sources */,
 				17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */,
-				17D662BD1E1BB073002FF28A /* dafsdf.swift in Sources */,
+				17C1392B1E1D0153000BFAF9 /* ZZWObject.swift in Sources */,
 				17D662A51E1B4C4E002FF28A /* UIColor+Extension.swift in Sources */,
 				17D6626E1E1B4B19002FF28A /* AppDelegate.swift in Sources */,
 				17D662A21E1B4BDA002FF28A /* Config.swift in Sources */,
 				17D6629E1E1B4B91002FF28A /* ZZWTabBarController.swift in Sources */,
 				17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */,
-				17D662BB1E1BB042002FF28A /* zzwView.swift in Sources */,
 				17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */,
 				17D662A01E1B4BB4002FF28A /* ZZWTabBar.swift in Sources */,
 			);
@@ -552,6 +578,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.english-Demo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhenwei/Desktop/公司swift学习/swift项目/english_Demo_swift/english_Demo_swift/bridgimg.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -565,6 +592,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.english-Demo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhenwei/Desktop/公司swift学习/swift项目/english_Demo_swift/english_Demo_swift/bridgimg.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

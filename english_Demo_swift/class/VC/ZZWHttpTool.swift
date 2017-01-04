@@ -7,14 +7,71 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
+typealias httpSuccess = (_ result: Any)->()
+typealias httpFailure = (_ error: Error)->()
 
 
-typealias httpSuccess = ()->(Any)
-typealias httpFailure = ()->(Error)
 
 class ZZWHttpTools {
-    class func get(_url:String,parameters:[String:AnyObject]?,success:httpSuccess,failure:httpFailure){
+    
+    //请求头
+    let requestHeader:HTTPHeaders = ["Platform":"qsc_ios/2.2.0/v6",
+                                     "Accept":"application/json"];
+    //设置manager属性 (重要)
+    var manger:SessionManager? = nil
+    
+    
+    //单例
+    static let share = ZZWHttpTools()
+    
+    func getWithPath(path: String,parameters: Dictionary<String,Any>?,success: @escaping ((_ result: JSON) -> ()),failure: @escaping ((_ error: Error) -> ())) {
+        
+
+        //配置 , 通常默认即可
+        let config:URLSessionConfiguration = URLSessionConfiguration.default
+        //设置超时时间为15S
+        config.timeoutIntervalForRequest = 15
+        //根据config创建manager
+        manger = SessionManager(configuration: config)
+        
+
+        manger?.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: requestHeader).validate().responseJSON(completionHandler: { (response) in
+            switch response.result {
+            case .success:
+                debugPrint(response)
+                if let data = response.data{
+                    let json = JSON(data: data)
+                    success(json)
+                    
+                }
+            case .failure(let error):
+                failure(error)
+            }
+
+        })
+        
+//
+//        
+//        Alamofire.request("http://index.qschou.com/v2.1.1/projects/recommendation?page=1", method: .get, parameters: parameters, encoding: URLEncoding.default, headers: requestHeader).validate().responseJSON { (response) in
+//
+//            switch response.result {
+//            case .success:
+//                debugPrint(response)
+//                if let data = response.data{
+//                    let json = JSON(data: data)
+//                    success(json)
+//                    
+//                }
+//            case .failure(let error):
+//                failure(error)
+//            }
+//
+//        }
+        
         
     }
-    
+
 }

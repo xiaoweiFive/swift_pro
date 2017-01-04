@@ -12,6 +12,7 @@ pod 'SwiftyJSON', '~> 3.1.3'
 pod 'MJRefresh', '~> 3.1.0'
 pod 'FMDB'
 pod 'MBProgressHUD', '~> 1.0.0'
-
+pod 'MJExtension'
+pod 'SDWebImage'
 
 end

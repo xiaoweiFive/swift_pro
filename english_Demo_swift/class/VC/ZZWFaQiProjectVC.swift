@@ -7,29 +7,63 @@
 //
 
 import UIKit
+import MJExtension
+import SDWebImage
+import MJRefresh
 
 class ZZWFaQiProjectVC: UIViewController {
 
-        
+    var objArr = [ZZWObject]()
+    let header = MJRefreshNormalHeader()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.addSubview(tableView)
         
-        
+        view.addSubview(myTableView)
+//        self.myTableView.mj_header = MJRefreshHeader(refreshingBlock: { 
+//            self.headerRefresh()
+//        })
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+        myTableView.mj_header = header
+        headerRefresh()
     }
 
-    lazy var tableView:UITableView = {
-        let tableView = UITableView(frame: self.view.bounds, style: .plain)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .none
-        tableView.backgroundColor = COLOR_NAV_BG
-        tableView.separatorColor = UIColor(red:0.9,  green:0.9,  blue:0.9, alpha:1)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return tableView
+    func headerRefresh()  {
+        let path = "http://index.qschou.com/v2.1.1/projects/recommendation?page=1"
+        
+        ZZWHttpTools.share.getWithPath(path: path, parameters: nil, success: { (json) in
+            let arrProject = json["data"].arrayObject as! [[String : AnyObject]]
+            
+            for dict in arrProject{
+                let  proJectModel  = ZZWObject().mj_setKeyValues(dict)
+                self.objArr.append(proJectModel!)
+            }
+            
+            self.myTableView.mj_header.endRefreshing()
+            DispatchQueue.main.async(execute: {
+                self.myTableView.reloadData()
+            })
+        }) { (error) in
+            print("-=-=-=-=-=-=请求失败-=-=-=-=-=-=-=-")
+        }
+    }
+    
+    
+    lazy var myTableView:UITableView = {
+        
+        let realTableView = UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-64), style: .plain)
+        
+        realTableView.delegate = self
+        realTableView.dataSource = self
+//        realTableView.separatorStyle = .none
+        realTableView.backgroundColor = COLOR_NAV_BG
+        realTableView.separatorColor = UIColor(red:0.9,  green:0.9,  blue:0.9, alpha:1)
+        realTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        realTableView.register(UINib.init(nibName: "ZZWProjectCardCell", bundle: nil), forCellReuseIdentifier: "myCell")
+        realTableView.estimatedRowHeight = 44.0
+        realTableView.rowHeight = UITableViewAutomaticDimension
+        return realTableView
     }()
-   
 }
 
 
@@ -41,12 +75,13 @@ extension ZZWFaQiProjectVC:UITableViewDelegate,UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.objArr.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 90
+//    }
+//   
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
@@ -58,16 +93,17 @@ extension ZZWFaQiProjectVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let identifier="identtifier";
-        var cell=tableView.dequeueReusableCell(withIdentifier: identifier)
-        if(cell == nil){
-            cell=UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: identifier);
-        }
-        cell?.selectionStyle = .none
-        cell?.textLabel?.text = "3243242342\(indexPath)";
-        cell?.detailTextLabel?.text = "待添加内容";
-        cell?.detailTextLabel?.font = UIFont .systemFont(ofSize: CGFloat(13))
-        cell?.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
-        return cell!
+        let obj:ZZWObject = objArr[indexPath.row];
+
+        let mycell : ZZWProjectCardCell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! ZZWProjectCardCell
+
+        mycell.selectionStyle = .none
+        
+        mycell.projectUser.text = obj.uuid;
+        mycell.productBiaoQian.text = obj.template;
+        mycell.productTitle.text = obj.title;
+        let showImage = obj.cover?.first
+        mycell.productImageView.sd_setImage(with: URL(string: (showImage?.image)!))
+        return mycell
     }
 }
