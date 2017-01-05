@@ -83,24 +83,15 @@
                         <rect key="frame" x="15" y="218" width="355" height="54"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-NJ-LED">
-                        <rect key="frame" x="0.0" y="75" width="124" height="143"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="124" id="sYV-UC-VfV"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="b4N-NJ-LED" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1sR-je-Z1c"/>
                     <constraint firstItem="3ev-Pj-Zko" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2wL-NL-ygQ"/>
                     <constraint firstAttribute="trailing" secondItem="3ev-Pj-Zko" secondAttribute="trailing" id="3DW-EG-5ig"/>
                     <constraint firstAttribute="trailing" secondItem="rqT-x7-EYA" secondAttribute="trailing" constant="15" id="Deb-gx-Q3T"/>
-                    <constraint firstItem="b4N-NJ-LED" firstAttribute="top" secondItem="rqT-x7-EYA" secondAttribute="bottom" id="IUj-YG-zhb"/>
                     <constraint firstItem="DRP-v2-wLd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NDF-VZ-RGw"/>
                     <constraint firstItem="rqT-x7-EYA" firstAttribute="top" secondItem="DRP-v2-wLd" secondAttribute="bottom" id="Nx8-e5-Cgr"/>
                     <constraint firstAttribute="trailing" secondItem="DRP-v2-wLd" secondAttribute="trailing" id="O6O-5i-Gib"/>
                     <constraint firstItem="DRP-v2-wLd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OiW-az-ld2"/>
-                    <constraint firstItem="Pzb-49-CxO" firstAttribute="top" secondItem="b4N-NJ-LED" secondAttribute="bottom" id="UPO-pO-yVF"/>
                     <constraint firstItem="Pzb-49-CxO" firstAttribute="top" secondItem="3ev-Pj-Zko" secondAttribute="bottom" constant="8" id="gZh-dC-Yu6"/>
                     <constraint firstItem="Pzb-49-CxO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ha4-gq-hvi"/>
                     <constraint firstItem="rqT-x7-EYA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="qs3-5j-jVB"/>
@@ -111,8 +102,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="headImageView" destination="4kn-Qk-S6a" id="EKY-Od-UAy"/>
+                <outlet property="imageCollectionView" destination="3ev-Pj-Zko" id="Dyc-CD-irK"/>
                 <outlet property="productBiaoQian" destination="8l0-RM-WqF" id="voe-cl-GEQ"/>
-                <outlet property="productImageView" destination="b4N-NJ-LED" id="g4S-FN-UiH"/>
                 <outlet property="productTitle" destination="rqT-x7-EYA" id="6JK-L1-NTX"/>
                 <outlet property="projectUser" destination="yWF-Zg-DWC" id="gx4-70-7gf"/>
             </connections>

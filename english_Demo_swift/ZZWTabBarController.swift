@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZZWTabBarController: UITabBarController {
+class ZZWTabBarController: UITabBarController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,7 @@ class ZZWTabBarController: UITabBarController {
         configChildViewController(childViewController: essenceVC4, title: "我", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         // 布局完立马选中，防止崩溃
         selectedIndex = 0
+        self.delegate = self
     }
     
     
@@ -51,22 +52,22 @@ class ZZWTabBarController: UITabBarController {
         addChildViewController(navigaitonVC)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    fileprivate  func presentLoginVc()  {
+        let login = ZZWNavigationViewController(rootViewController: ZZWLoginViewController())
+        present(login, animated: true, completion: nil)
     }
-    */
+}
 
+
+extension ZZWTabBarController:UITabBarControllerDelegate{
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        print(ZZWAccountTool.share.account?.userName ?? "11111111111111")
+        if (selectedIndex == 1 || selectedIndex == 2 || selectedIndex == 3  ) && (UserDefaults.standard.object(forKey: "usersAccount") == nil) {
+            presentLoginVc()
+        }
+    }
 }
 
 extension ZZWTabBarController:ZZWTabBarDelegate{

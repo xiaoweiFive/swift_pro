@@ -35,6 +35,7 @@ class ZZWTabBar: UITabBar {
         let height:CGFloat = 49
         var index = 0
         for view in subviews {
+            
             if !view.isKind(of: NSClassFromString("UITabBarButton")!) {
                 if view.isKind(of: NSClassFromString("UIImageView")!) && view.bounds.size.height<=1 {
                     view.isHidden = true

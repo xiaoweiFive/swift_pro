@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174CAE0F1E1DE78500300FD7 /* ZZWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174CAE0D1E1DE78500300FD7 /* ZZWLoginViewController.swift */; };
+		174CAE101E1DE78500300FD7 /* ZZWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CAE0E1E1DE78500300FD7 /* ZZWLoginViewController.xib */; };
+		174CAE121E1DF0E500300FD7 /* ZZWAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174CAE111E1DF0E500300FD7 /* ZZWAccountTool.swift */; };
+		174CAE141E1DF2AF00300FD7 /* ZZWAcconut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174CAE131E1DF2AF00300FD7 /* ZZWAcconut.swift */; };
+		174CAE161E1E19FF00300FD7 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174CAE151E1E19FF00300FD7 /* userInfo.swift */; };
+		174CAE191E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174CAE171E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.swift */; };
+		174CAE1A1E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174CAE181E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.xib */; };
 		17C1392A1E1D0153000BFAF9 /* QSCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C139251E1D0153000BFAF9 /* QSCImage.swift */; };
 		17C1392B1E1D0153000BFAF9 /* ZZWObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C139261E1D0153000BFAF9 /* ZZWObject.swift */; };
 		17C1392C1E1D0153000BFAF9 /* ZZWProjectCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C139281E1D0153000BFAF9 /* ZZWProjectCardCell.swift */; };
@@ -48,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		174CAE0D1E1DE78500300FD7 /* ZZWLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWLoginViewController.swift; sourceTree = "<group>"; };
+		174CAE0E1E1DE78500300FD7 /* ZZWLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWLoginViewController.xib; sourceTree = "<group>"; };
+		174CAE111E1DF0E500300FD7 /* ZZWAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWAccountTool.swift; sourceTree = "<group>"; };
+		174CAE131E1DF2AF00300FD7 /* ZZWAcconut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWAcconut.swift; sourceTree = "<group>"; };
+		174CAE151E1E19FF00300FD7 /* userInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		174CAE171E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		174CAE181E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		17C139231E1CE6A4000BFAF9 /* bridgimg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgimg.h; sourceTree = "<group>"; };
 		17C139251E1D0153000BFAF9 /* QSCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCImage.swift; sourceTree = "<group>"; };
 		17C139261E1D0153000BFAF9 /* ZZWObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWObject.swift; sourceTree = "<group>"; };
@@ -106,6 +120,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174CAE0C1E1DE77200300FD7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				174CAE0D1E1DE78500300FD7 /* ZZWLoginViewController.swift */,
+				174CAE0E1E1DE78500300FD7 /* ZZWLoginViewController.xib */,
+				174CAE111E1DF0E500300FD7 /* ZZWAccountTool.swift */,
+				174CAE131E1DF2AF00300FD7 /* ZZWAcconut.swift */,
+				174CAE151E1E19FF00300FD7 /* userInfo.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		17C139241E1D0153000BFAF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +146,8 @@
 			children = (
 				17C139281E1D0153000BFAF9 /* ZZWProjectCardCell.swift */,
 				17C139291E1D0153000BFAF9 /* ZZWProjectCardCell.xib */,
+				174CAE171E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.swift */,
+				174CAE181E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +187,7 @@
 				17D6629F1E1B4BB4002FF28A /* ZZWTabBar.swift */,
 				17D662B61E1BA36D002FF28A /* ZZWHttpTool.swift */,
 				17C139231E1CE6A4000BFAF9 /* bridgimg.h */,
+				174CAE0C1E1DE77200300FD7 /* login */,
 				17D662A31E1B4C39002FF28A /* Extension */,
 				17D662761E1B4B19002FF28A /* LaunchScreen.storyboard */,
 				17D662791E1B4B19002FF28A /* Info.plist */,
@@ -340,8 +369,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174CAE1A1E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.xib in Resources */,
 				17C1392D1E1D0153000BFAF9 /* ZZWProjectCardCell.xib in Resources */,
 				17D662781E1B4B19002FF28A /* LaunchScreen.storyboard in Resources */,
+				174CAE101E1DE78500300FD7 /* ZZWLoginViewController.xib in Resources */,
 				17D6629C1E1B4B32002FF28A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,13 +454,18 @@
 				17D662AB1E1B52A9002FF28A /* ZZWHomeViewController.swift in Sources */,
 				17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */,
 				17C1392B1E1D0153000BFAF9 /* ZZWObject.swift in Sources */,
+				174CAE191E1E1F0B00300FD7 /* ZZWImageCollectionViewCell.swift in Sources */,
 				17D662A51E1B4C4E002FF28A /* UIColor+Extension.swift in Sources */,
 				17D6626E1E1B4B19002FF28A /* AppDelegate.swift in Sources */,
+				174CAE0F1E1DE78500300FD7 /* ZZWLoginViewController.swift in Sources */,
 				17D662A21E1B4BDA002FF28A /* Config.swift in Sources */,
 				17D6629E1E1B4B91002FF28A /* ZZWTabBarController.swift in Sources */,
 				17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */,
+				174CAE121E1DF0E500300FD7 /* ZZWAccountTool.swift in Sources */,
 				17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */,
 				17D662A01E1B4BB4002FF28A /* ZZWTabBar.swift in Sources */,
+				174CAE141E1DF2AF00300FD7 /* ZZWAcconut.swift in Sources */,
+				174CAE161E1E19FF00300FD7 /* userInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

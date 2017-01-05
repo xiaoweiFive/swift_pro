@@ -26,8 +26,20 @@ class ZZWFaQiProjectVC: UIViewController {
         header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
         myTableView.mj_header = header
         headerRefresh()
+        
+        
+        //自定义对象读取
+        let userDefault = UserDefaults.standard
+        let myModelData = userDefault.data(forKey: "myModel")
+        let myModel = NSKeyedUnarchiver.unarchiveObject(with: myModelData!) as! userInfo
+        print(myModel.name)
+        print(myModel.phone)
+        
     }
 
+    
+    
+    
     func headerRefresh()  {
         let path = "http://index.qschou.com/v2.1.1/projects/recommendation?page=1"
         
@@ -98,12 +110,13 @@ extension ZZWFaQiProjectVC:UITableViewDelegate,UITableViewDataSource{
         let mycell : ZZWProjectCardCell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! ZZWProjectCardCell
 
         mycell.selectionStyle = .none
-        
         mycell.projectUser.text = obj.uuid;
         mycell.productBiaoQian.text = obj.template;
         mycell.productTitle.text = obj.title;
-        let showImage = obj.cover?.first
-        mycell.productImageView.sd_setImage(with: URL(string: (showImage?.image)!))
+//        mycell.imageArray = obj.cover
+        mycell.setImageCellData(projectModel: obj)
+
         return mycell
     }
+    
 }

@@ -26,18 +26,10 @@ class ZZWHttpTools {
     
     //单例
     static let share = ZZWHttpTools()
-    
+
     func getWithPath(path: String,parameters: Dictionary<String,Any>?,success: @escaping ((_ result: JSON) -> ()),failure: @escaping ((_ error: Error) -> ())) {
         
-
-        //配置 , 通常默认即可
-        let config:URLSessionConfiguration = URLSessionConfiguration.default
-        //设置超时时间为15S
-        config.timeoutIntervalForRequest = 15
-        //根据config创建manager
-        manger = SessionManager(configuration: config)
-        
-
+        _ = getSessionconfig()
         manger?.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: requestHeader).validate().responseJSON(completionHandler: { (response) in
             switch response.result {
             case .success:
@@ -48,30 +40,23 @@ class ZZWHttpTools {
                     
                 }
             case .failure(let error):
+                print(error)
                 failure(error)
             }
-
         })
-        
-//
-//        
-//        Alamofire.request("http://index.qschou.com/v2.1.1/projects/recommendation?page=1", method: .get, parameters: parameters, encoding: URLEncoding.default, headers: requestHeader).validate().responseJSON { (response) in
-//
-//            switch response.result {
-//            case .success:
-//                debugPrint(response)
-//                if let data = response.data{
-//                    let json = JSON(data: data)
-//                    success(json)
-//                    
-//                }
-//            case .failure(let error):
-//                failure(error)
-//            }
-//
-//        }
-        
-        
+    }
+    
+    
+    
+    
+    func getSessionconfig() -> SessionManager {
+        //配置 , 通常默认即可
+        let config:URLSessionConfiguration = URLSessionConfiguration.default
+        //设置超时时间为15S
+        config.timeoutIntervalForRequest = 15
+        //根据config创建manager
+        manger = SessionManager(configuration: config)
+        return manger!
     }
 
 }

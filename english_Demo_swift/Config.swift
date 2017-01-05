@@ -8,6 +8,9 @@
 
 import UIKit
 
+let kFileAccount =  NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("account.data")
+
+
 
 let SCREEN_BOUNDS = UIScreen.main.bounds
 let SCREEN_WIDTH = SCREEN_BOUNDS.width

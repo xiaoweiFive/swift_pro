@@ -6,9 +6,7 @@
 //  Copyright © 2017年 zhangzhenwei. All rights reserved.
 //
 //
-//#ifndef bridgimg_h
-//#define bridgimg_h
-//
+
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <MBProgressHUD/MBProgressHUD.h>
@@ -17,4 +15,4 @@
 
 
 
-//#endif /* bridgimg_h */
+
