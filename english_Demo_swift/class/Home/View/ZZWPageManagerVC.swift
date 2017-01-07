@@ -87,8 +87,6 @@ extension ZZWPageManagerVC:UIPageViewControllerDelegate,UIPageViewControllerData
         return childControllerS.count
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]){
-    }
     
     //当控制器完成显示后调用
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {

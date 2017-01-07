@@ -128,13 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		174082D31E210A6300A007D8 /* Home */ = {
+		174082D31E210A6300A007D8 /* Home （首页） */ = {
 			isa = PBXGroup;
 			children = (
 				174082D41E210A6300A007D8 /* Model */,
 				174082D71E210A6300A007D8 /* VC */,
 				174082DD1E210A6300A007D8 /* View */,
 			);
+			name = "Home （首页）";
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -176,6 +177,28 @@
 				174082EE1E210AB700A007D8 /* ZZWPageManagerVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		174082F21E21393C00A007D8 /* Redian（热点） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Redian（热点）";
+			sourceTree = "<group>";
+		};
+		174082F31E21394D00A007D8 /* ZhiBo（直播） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "ZhiBo（直播）";
+			path = "Redian（热点）/ZhiBo（直播）";
+			sourceTree = "<group>";
+		};
+		174082F41E21396800A007D8 /* Me（个人中心） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Me（个人中心）";
 			sourceTree = "<group>";
 		};
 		174CAE0C1E1DE77200300FD7 /* login */ = {
@@ -265,7 +288,10 @@
 		17D662A81E1B5295002FF28A /* class */ = {
 			isa = PBXGroup;
 			children = (
-				174082D31E210A6300A007D8 /* Home */,
+				174082D31E210A6300A007D8 /* Home （首页） */,
+				174082F21E21393C00A007D8 /* Redian（热点） */,
+				174082F31E21394D00A007D8 /* ZhiBo（直播） */,
+				174082F41E21396800A007D8 /* Me（个人中心） */,
 			);
 			path = class;
 			sourceTree = "<group>";
