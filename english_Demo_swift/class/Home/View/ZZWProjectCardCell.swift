@@ -94,9 +94,9 @@ extension ZZWProjectCardCell:UICollectionViewDelegate,UICollectionViewDataSource
         
         let item = (proobjModel?.cover?[indexPath.row])! as QSCImage
         
-        guard <#condition#> else {
-            <#statements#>
-        }
+//        guard <#condition#> else {
+//            <#statements#>
+//        }
         
         cell.ZZWimageView.sd_setImage(with: URL(string: (item.image)!))
 

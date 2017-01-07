@@ -28,12 +28,12 @@ class ZZWFaQiProjectVC: UIViewController {
         headerRefresh()
         
         
-        //自定义对象读取
-        let userDefault = UserDefaults.standard
-        let myModelData = userDefault.data(forKey: "myModel")
-        let myModel = NSKeyedUnarchiver.unarchiveObject(with: myModelData!) as! userInfo
-        print(myModel.name)
-        print(myModel.phone)
+//        //自定义对象读取
+//        let userDefault = UserDefaults.standard
+//        let myModelData = userDefault.data(forKey: "myModel")
+//        let myModel = NSKeyedUnarchiver.unarchiveObject(with: myModelData!) as! userInfo
+//        print(myModel.name)
+//        print(myModel.phone)
         
     }
 

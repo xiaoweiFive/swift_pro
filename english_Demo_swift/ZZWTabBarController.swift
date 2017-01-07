@@ -25,17 +25,17 @@ class ZZWTabBarController: UITabBarController{
         let essenceVC1  = ZZWHomeViewController()
         configChildViewController(childViewController: essenceVC1, title: "首页", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         
-        let essenceVC2  = ZZWHomeViewController()
+        let essenceVC2  = UIViewController()
         
-        configChildViewController(childViewController: essenceVC2, title: "首页", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
+        configChildViewController(childViewController: essenceVC2, title: "热点", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         
-        let essenceVC3  = ZZWHomeViewController()
+        let essenceVC3  = UIViewController()
 
-        configChildViewController(childViewController: essenceVC3, title: "首页", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
+        configChildViewController(childViewController: essenceVC3, title: "直播", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         
         let essenceVC4  = ZZWFaQiProjectVC()
 
-        configChildViewController(childViewController: essenceVC4, title: "我", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
+        configChildViewController(childViewController: essenceVC4, title: "个人中心", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         // 布局完立马选中，防止崩溃
         selectedIndex = 0
         self.delegate = self

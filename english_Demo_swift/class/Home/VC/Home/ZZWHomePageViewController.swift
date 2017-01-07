@@ -1,18 +1,20 @@
 //
-//  ZZWHomeViewController.swift
+//  ZZWHomePageViewController.swift
 //  english_Demo_swift
 //
-//  Created by zhangzhenwei on 17/1/3.
+//  Created by 张振伟 on 17/1/7.
 //  Copyright © 2017年 zhangzhenwei. All rights reserved.
 //
 
 import UIKit
 
-class ZZWHomeViewController: UIViewController {
+class ZZWHomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = UIColor.randomColor()
+        
         // Do any additional setup after loading the view.
     }
 

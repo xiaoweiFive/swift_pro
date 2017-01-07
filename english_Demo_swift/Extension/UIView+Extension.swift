@@ -68,6 +68,41 @@ extension UIView {
         set {
             frame.origin = newValue
         }
-}
+        
+    }
+    
+    
+    
+    /// 裁剪 view 的圆角
+    func clipRectCorner(direction: UIRectCorner, cornerRadius: CGFloat) {
+        let cornerSize = CGSize(width: cornerRadius, height: cornerRadius)
+        let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: direction, cornerRadii: cornerSize)
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = bounds
+        maskLayer.path = maskPath.cgPath
+        layer.addSublayer(maskLayer)
+        layer.mask = maskLayer
+    }
+    
+    
+    
+    public var centerX : CGFloat{
+        get{
+            return self.center.x
+        }
+        set{
+            self.center = CGPoint(x: newValue, y: self.center.y)
+        }
+    }
+    
+    public var centerY : CGFloat{
+        get{
+            return self.center.y
+        }
+        set{
+            self.center = CGPoint(x: self.center.x, y: newValue)
+        }
+    }
+
 
 }
