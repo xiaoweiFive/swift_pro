@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F68313C581C1AC72FF51E4E13FB48A57'
-               BlueprintName = 'SwiftyJSON'
+               BlueprintIdentifier = '89F5CBE5CEF86847E21935C204AD8939'
+               BlueprintName = 'SDCycleScrollView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftyJSON.framework'>
+               BuildableName = 'SDCycleScrollView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

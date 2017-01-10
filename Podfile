@@ -14,5 +14,7 @@ pod 'FMDB'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'MJExtension'
 pod 'SDWebImage'
+pod 'SDCycleScrollView'
+
 
 end

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17380C361E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C351E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift */; };
+		17380C381E24E00200B59DEA /* ZZWFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C371E24E00200B59DEA /* ZZWFireViewController.swift */; };
+		17380C3A1E24E04D00B59DEA /* ZZWBannerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */; };
+		17380C3C1E24E20D00B59DEA /* ZZWBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C3B1E24E20D00B59DEA /* ZZWBannerModel.swift */; };
 		174082E21E210A6300A007D8 /* QSCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082D51E210A6300A007D8 /* QSCImage.swift */; };
 		174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082D61E210A6300A007D8 /* ZZWObject.swift */; };
 		174082E41E210A6300A007D8 /* ZZWHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082D91E210A6300A007D8 /* ZZWHomePageViewController.swift */; };
 		174082E51E210A6300A007D8 /* ZZWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082DA1E210A6300A007D8 /* ZZWHomeViewController.swift */; };
-		174082E61E210A6300A007D8 /* ZZWFaQiProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082DB1E210A6300A007D8 /* ZZWFaQiProjectVC.swift */; };
 		174082E71E210A6300A007D8 /* ZZWHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082DC1E210A6300A007D8 /* ZZWHttpTool.swift */; };
 		174082E81E210A6300A007D8 /* ZZWImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082DE1E210A6300A007D8 /* ZZWImageCollectionViewCell.swift */; };
 		174082E91E210A6300A007D8 /* ZZWImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174082DF1E210A6300A007D8 /* ZZWImageCollectionViewCell.xib */; };
@@ -59,11 +62,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17380C351E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFaQiProjectVC.swift; sourceTree = "<group>"; };
+		17380C371E24E00200B59DEA /* ZZWFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFireViewController.swift; sourceTree = "<group>"; };
+		17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBannerScrollView.swift; sourceTree = "<group>"; };
+		17380C3B1E24E20D00B59DEA /* ZZWBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBannerModel.swift; sourceTree = "<group>"; };
 		174082D51E210A6300A007D8 /* QSCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCImage.swift; sourceTree = "<group>"; };
 		174082D61E210A6300A007D8 /* ZZWObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWObject.swift; sourceTree = "<group>"; };
 		174082D91E210A6300A007D8 /* ZZWHomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomePageViewController.swift; sourceTree = "<group>"; };
 		174082DA1E210A6300A007D8 /* ZZWHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomeViewController.swift; sourceTree = "<group>"; };
-		174082DB1E210A6300A007D8 /* ZZWFaQiProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFaQiProjectVC.swift; sourceTree = "<group>"; };
 		174082DC1E210A6300A007D8 /* ZZWHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZZWHttpTool.swift; path = class/Home/VC/ZZWHttpTool.swift; sourceTree = "<group>"; };
 		174082DE1E210A6300A007D8 /* ZZWImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		174082DF1E210A6300A007D8 /* ZZWImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWImageCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -128,6 +134,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17380C291E24DF4200B59DEA /* ME(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				17380C2A1E24DF4200B59DEA /* Model */,
+				17380C2B1E24DF4200B59DEA /* VC */,
+				17380C2C1E24DF4200B59DEA /* View */,
+			);
+			path = "ME(个人中心)";
+			sourceTree = "<group>";
+		};
+		17380C2A1E24DF4200B59DEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17380C2B1E24DF4200B59DEA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				17380C351E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		17380C2C1E24DF4200B59DEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17380C2D1E24DF4200B59DEA /* ReDian(热点) */ = {
+			isa = PBXGroup;
+			children = (
+				17380C2E1E24DF4200B59DEA /* Model */,
+				17380C2F1E24DF4200B59DEA /* VC */,
+				17380C301E24DF4200B59DEA /* View */,
+			);
+			path = "ReDian(热点)";
+			sourceTree = "<group>";
+		};
+		17380C2E1E24DF4200B59DEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17380C3B1E24E20D00B59DEA /* ZZWBannerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17380C2F1E24DF4200B59DEA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				17380C371E24E00200B59DEA /* ZZWFireViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		17380C301E24DF4200B59DEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17380C311E24DF4200B59DEA /* ZhiBo(直播） */ = {
+			isa = PBXGroup;
+			children = (
+				17380C321E24DF4200B59DEA /* Model */,
+				17380C331E24DF4200B59DEA /* VC */,
+				17380C341E24DF4200B59DEA /* View */,
+			);
+			path = "ZhiBo(直播）";
+			sourceTree = "<group>";
+		};
+		17380C321E24DF4200B59DEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17380C331E24DF4200B59DEA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		17380C341E24DF4200B59DEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		174082D31E210A6300A007D8 /* Home （首页） */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				174082D81E210A6300A007D8 /* Home */,
-				174082DB1E210A6300A007D8 /* ZZWFaQiProjectVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -177,28 +279,6 @@
 				174082EE1E210AB700A007D8 /* ZZWPageManagerVC.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		174082F21E21393C00A007D8 /* Redian（热点） */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Redian（热点）";
-			sourceTree = "<group>";
-		};
-		174082F31E21394D00A007D8 /* ZhiBo（直播） */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "ZhiBo（直播）";
-			path = "Redian（热点）/ZhiBo（直播）";
-			sourceTree = "<group>";
-		};
-		174082F41E21396800A007D8 /* Me（个人中心） */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Me（个人中心）";
 			sourceTree = "<group>";
 		};
 		174CAE0C1E1DE77200300FD7 /* login */ = {
@@ -289,9 +369,9 @@
 			isa = PBXGroup;
 			children = (
 				174082D31E210A6300A007D8 /* Home （首页） */,
-				174082F21E21393C00A007D8 /* Redian（热点） */,
-				174082F31E21394D00A007D8 /* ZhiBo（直播） */,
-				174082F41E21396800A007D8 /* Me（个人中心） */,
+				17380C291E24DF4200B59DEA /* ME(个人中心) */,
+				17380C2D1E24DF4200B59DEA /* ReDian(热点) */,
+				17380C311E24DF4200B59DEA /* ZhiBo(直播） */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -504,6 +584,7 @@
 				17D662A71E1B4F27002FF28A /* UIView+Extension.swift in Sources */,
 				17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */,
 				174082E81E210A6300A007D8 /* ZZWImageCollectionViewCell.swift in Sources */,
+				17380C3C1E24E20D00B59DEA /* ZZWBannerModel.swift in Sources */,
 				174082F11E21279700A007D8 /* NSString+Extension.swift in Sources */,
 				17D662A51E1B4C4E002FF28A /* UIColor+Extension.swift in Sources */,
 				17D6626E1E1B4B19002FF28A /* AppDelegate.swift in Sources */,
@@ -512,13 +593,15 @@
 				174082EA1E210A6300A007D8 /* ZZWProjectCardCell.swift in Sources */,
 				174CAE0F1E1DE78500300FD7 /* ZZWLoginViewController.swift in Sources */,
 				17D662A21E1B4BDA002FF28A /* Config.swift in Sources */,
+				17380C381E24E00200B59DEA /* ZZWFireViewController.swift in Sources */,
 				174082E21E210A6300A007D8 /* QSCImage.swift in Sources */,
+				17380C3A1E24E04D00B59DEA /* ZZWBannerScrollView.swift in Sources */,
 				17D6629E1E1B4B91002FF28A /* ZZWTabBarController.swift in Sources */,
+				17380C361E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift in Sources */,
 				17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */,
 				174CAE121E1DF0E500300FD7 /* ZZWAccountTool.swift in Sources */,
 				174082E41E210A6300A007D8 /* ZZWHomePageViewController.swift in Sources */,
 				17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */,
-				174082E61E210A6300A007D8 /* ZZWFaQiProjectVC.swift in Sources */,
 				174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */,
 				174082EF1E210AB700A007D8 /* ZZWPageManagerVC.swift in Sources */,
 				17D662A01E1B4BB4002FF28A /* ZZWTabBar.swift in Sources */,
