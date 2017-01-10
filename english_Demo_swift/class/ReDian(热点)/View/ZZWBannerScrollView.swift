@@ -11,7 +11,7 @@ import SDCycleScrollView
 
 class ZZWBannerScrollView: UIView {
     
-    let headScroll = SDCycleScrollView()
+    var headScroll = SDCycleScrollView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
