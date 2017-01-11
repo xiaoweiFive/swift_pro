@@ -11,5 +11,7 @@ import UIKit
 class ZZWBannerModel: NSObject {
     
     var photo: String?
-    
+    var browser_url: String?
+
+
 }

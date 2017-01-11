@@ -9,10 +9,22 @@
 import UIKit
 import SDCycleScrollView
 
+protocol clickBannerDelegate:NSObjectProtocol {
+    func clickBannerToDo(index:Int)
+}
+
+
 class ZZWBannerScrollView: UIView {
+    
+    weak var delegate:clickBannerDelegate?
+
     
     var headScroll = SDCycleScrollView()
     
+    var modelArray = Array<ZZWBannerModel>()
+
+    var picArr = Array<String>()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         headScroll = SDCycleScrollView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: 200), delegate: self, placeholderImage: UIImage.init(named: "PersonCenterbackImage"))
@@ -23,9 +35,9 @@ class ZZWBannerScrollView: UIView {
     
     
     func getScrollImgSource(source: Array<ZZWBannerModel>) {
-        var picArr = Array<String>()
         for model:ZZWBannerModel in source {
             picArr.append(model.photo!)
+            modelArray.append(model)
         }
         headScroll.imageURLStringsGroup = picArr
     }
@@ -41,5 +53,9 @@ class ZZWBannerScrollView: UIView {
 extension ZZWBannerScrollView:SDCycleScrollViewDelegate{
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
         
+        if picArr[index].characters.count > 0 {
+            print(picArr[index])
+            self.delegate?.clickBannerToDo(index:index)
+        }
     }
 }

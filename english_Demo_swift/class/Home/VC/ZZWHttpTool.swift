@@ -30,7 +30,7 @@ class ZZWHttpTools {
     func getWithPath(path: String,parameters: Dictionary<String,Any>?,success: @escaping ((_ result: JSON) -> ()),failure: @escaping ((_ error: Error) -> ())) {
         
         _ = getSessionconfig()
-        manger?.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: requestHeader).validate().responseJSON(completionHandler: { (response) in
+        manger?.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).validate().responseJSON(completionHandler: { (response) in
             switch response.result {
             case .success:
                 debugPrint(response)
