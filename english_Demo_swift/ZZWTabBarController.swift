@@ -29,7 +29,7 @@ class ZZWTabBarController: UITabBarController{
         
         configChildViewController(childViewController: essenceVC2, title: "热点", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         
-        let essenceVC3  = UIViewController()
+        let essenceVC3  = ZZWZhiBoViewController()
 
         configChildViewController(childViewController: essenceVC3, title: "直播", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         

@@ -27,6 +27,30 @@ class ZZWHttpTools {
     //单例
     static let share = ZZWHttpTools()
 
+    
+    func zzwHttpRequest(path: String,parameters:Dictionary<String,Any>?,success:@escaping httpSuccess,failure:@escaping httpFailure) {
+        _ = getSessionconfig()
+        manger?.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).validate().responseJSON(completionHandler: { (response) in
+            switch response.result {
+            case .success:
+                debugPrint(response)
+                if let data = response.data{
+                    let json = JSON(data: data)
+                    //                    success(json)
+                    success(json)
+                    
+                }
+            case .failure(let error):
+                print(error)
+                //                failure(error)
+                failure(error)
+            }
+            
+        })
+    }
+    
+    
+    
     func getWithPath(path: String,parameters: Dictionary<String,Any>?,success: @escaping ((_ result: JSON) -> ()),failure: @escaping ((_ error: Error) -> ())) {
         
         _ = getSessionconfig()

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173209761E2CADD2007C964C /* ZZWZhiBoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173209751E2CADD2007C964C /* ZZWZhiBoViewController.swift */; };
+		173209781E2CAE10007C964C /* ZZWHeadSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173209771E2CAE10007C964C /* ZZWHeadSegmentView.swift */; };
+		1732097A1E2CB08C007C964C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173209791E2CB08C007C964C /* UIButton+Extension.swift */; };
+		1732097C1E2CC923007C964C /* ZZWSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732097B1E2CC923007C964C /* ZZWSegmentViewController.swift */; };
 		17380C361E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C351E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift */; };
 		17380C381E24E00200B59DEA /* ZZWFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C371E24E00200B59DEA /* ZZWFireViewController.swift */; };
 		17380C3A1E24E04D00B59DEA /* ZZWBannerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */; };
@@ -62,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		173209751E2CADD2007C964C /* ZZWZhiBoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWZhiBoViewController.swift; sourceTree = "<group>"; };
+		173209771E2CAE10007C964C /* ZZWHeadSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHeadSegmentView.swift; sourceTree = "<group>"; };
+		173209791E2CB08C007C964C /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		1732097B1E2CC923007C964C /* ZZWSegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWSegmentViewController.swift; sourceTree = "<group>"; };
 		17380C351E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFaQiProjectVC.swift; sourceTree = "<group>"; };
 		17380C371E24E00200B59DEA /* ZZWFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFireViewController.swift; sourceTree = "<group>"; };
 		17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBannerScrollView.swift; sourceTree = "<group>"; };
@@ -220,6 +228,8 @@
 		17380C331E24DF4200B59DEA /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				173209751E2CADD2007C964C /* ZZWZhiBoViewController.swift */,
+				1732097B1E2CC923007C964C /* ZZWSegmentViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -227,6 +237,7 @@
 		17380C341E24DF4200B59DEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				173209771E2CAE10007C964C /* ZZWHeadSegmentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +372,7 @@
 				17D662A41E1B4C4E002FF28A /* UIColor+Extension.swift */,
 				17D662A61E1B4F27002FF28A /* UIView+Extension.swift */,
 				17D662AE1E1B5735002FF28A /* UIBarButtonItem+Extension.swift */,
+				173209791E2CB08C007C964C /* UIButton+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -584,6 +596,7 @@
 				17D662A71E1B4F27002FF28A /* UIView+Extension.swift in Sources */,
 				17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */,
 				174082E81E210A6300A007D8 /* ZZWImageCollectionViewCell.swift in Sources */,
+				1732097C1E2CC923007C964C /* ZZWSegmentViewController.swift in Sources */,
 				17380C3C1E24E20D00B59DEA /* ZZWBannerModel.swift in Sources */,
 				174082F11E21279700A007D8 /* NSString+Extension.swift in Sources */,
 				17D662A51E1B4C4E002FF28A /* UIColor+Extension.swift in Sources */,
@@ -602,10 +615,13 @@
 				174CAE121E1DF0E500300FD7 /* ZZWAccountTool.swift in Sources */,
 				174082E41E210A6300A007D8 /* ZZWHomePageViewController.swift in Sources */,
 				17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */,
+				173209761E2CADD2007C964C /* ZZWZhiBoViewController.swift in Sources */,
 				174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */,
+				1732097A1E2CB08C007C964C /* UIButton+Extension.swift in Sources */,
 				174082EF1E210AB700A007D8 /* ZZWPageManagerVC.swift in Sources */,
 				17D662A01E1B4BB4002FF28A /* ZZWTabBar.swift in Sources */,
 				174082E51E210A6300A007D8 /* ZZWHomeViewController.swift in Sources */,
+				173209781E2CAE10007C964C /* ZZWHeadSegmentView.swift in Sources */,
 				174CAE141E1DF2AF00300FD7 /* ZZWAcconut.swift in Sources */,
 				174CAE161E1E19FF00300FD7 /* userInfo.swift in Sources */,
 			);

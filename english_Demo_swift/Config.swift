@@ -29,3 +29,4 @@ func zzwColor(red: Int, green: Int, blue: Int, alpha: CGFloat) -> (UIColor){
     return UIColor(red: CGFloat(red)/CGFloat(255), green: CGFloat(green)/CGFloat(255), blue: CGFloat(blue)/CGFloat(255), alpha: alpha)
 }
 
+//let headSegmentArray = ["推荐","最新","热门","礼物","美食","生活","设计感","家居","数码","阅读","学生党","上班族","美妆","护理","运动户外","健康"]
