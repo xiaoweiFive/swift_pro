@@ -15,6 +15,17 @@
 		17380C381E24E00200B59DEA /* ZZWFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C371E24E00200B59DEA /* ZZWFireViewController.swift */; };
 		17380C3A1E24E04D00B59DEA /* ZZWBannerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */; };
 		17380C3C1E24E20D00B59DEA /* ZZWBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17380C3B1E24E20D00B59DEA /* ZZWBannerModel.swift */; };
+		173DE2881E35E3A2006A5C5D /* ZZWSaleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE2871E35E3A2006A5C5D /* ZZWSaleDetailViewController.swift */; };
+		173DE28B1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE2891E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.swift */; };
+		173DE28C1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173DE28A1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.xib */; };
+		173DE28F1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE28D1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.swift */; };
+		173DE2901E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173DE28E1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.xib */; };
+		173DE2931E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE2911E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift */; };
+		173DE2941E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173DE2921E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.xib */; };
+		173DE2971E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE2951E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.swift */; };
+		173DE2981E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173DE2961E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.xib */; };
+		173DE29A1E35F060006A5C5D /* ZZWProjectTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE2991E35F060006A5C5D /* ZZWProjectTemplate.swift */; };
+		173DE29C1E35F292006A5C5D /* ZZWRewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DE29B1E35F292006A5C5D /* ZZWRewardModel.swift */; };
 		174082E21E210A6300A007D8 /* QSCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082D51E210A6300A007D8 /* QSCImage.swift */; };
 		174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082D61E210A6300A007D8 /* ZZWObject.swift */; };
 		174082E41E210A6300A007D8 /* ZZWHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174082D91E210A6300A007D8 /* ZZWHomePageViewController.swift */; };
@@ -74,6 +85,17 @@
 		17380C371E24E00200B59DEA /* ZZWFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWFireViewController.swift; sourceTree = "<group>"; };
 		17380C391E24E04D00B59DEA /* ZZWBannerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBannerScrollView.swift; sourceTree = "<group>"; };
 		17380C3B1E24E20D00B59DEA /* ZZWBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBannerModel.swift; sourceTree = "<group>"; };
+		173DE2871E35E3A2006A5C5D /* ZZWSaleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWSaleDetailViewController.swift; sourceTree = "<group>"; };
+		173DE2891E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWSaleDetailTitleCell.swift; sourceTree = "<group>"; };
+		173DE28A1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWSaleDetailTitleCell.xib; sourceTree = "<group>"; };
+		173DE28D1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWSaleDetailLogisticMoneyCell.swift; sourceTree = "<group>"; };
+		173DE28E1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWSaleDetailLogisticMoneyCell.xib; sourceTree = "<group>"; };
+		173DE2911E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWSaleDetailUserNameCell.swift; sourceTree = "<group>"; };
+		173DE2921E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWSaleDetailUserNameCell.xib; sourceTree = "<group>"; };
+		173DE2951E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWSaleDetailRewardInfoCell.swift; sourceTree = "<group>"; };
+		173DE2961E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWSaleDetailRewardInfoCell.xib; sourceTree = "<group>"; };
+		173DE2991E35F060006A5C5D /* ZZWProjectTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWProjectTemplate.swift; sourceTree = "<group>"; };
+		173DE29B1E35F292006A5C5D /* ZZWRewardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWRewardModel.swift; sourceTree = "<group>"; };
 		174082D51E210A6300A007D8 /* QSCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCImage.swift; sourceTree = "<group>"; };
 		174082D61E210A6300A007D8 /* ZZWObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWObject.swift; sourceTree = "<group>"; };
 		174082D91E210A6300A007D8 /* ZZWHomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomePageViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +177,8 @@
 		17380C2A1E24DF4200B59DEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				173DE2991E35F060006A5C5D /* ZZWProjectTemplate.swift */,
+				173DE29B1E35F292006A5C5D /* ZZWRewardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				17380C351E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift */,
+				173DE2871E35E3A2006A5C5D /* ZZWSaleDetailViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -170,6 +195,14 @@
 		17380C2C1E24DF4200B59DEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				173DE2891E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.swift */,
+				173DE28A1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.xib */,
+				173DE28D1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.swift */,
+				173DE28E1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.xib */,
+				173DE2911E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift */,
+				173DE2921E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.xib */,
+				173DE2951E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.swift */,
+				173DE2961E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,8 +549,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173DE28C1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.xib in Resources */,
+				173DE2941E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.xib in Resources */,
+				173DE2901E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.xib in Resources */,
 				174082E91E210A6300A007D8 /* ZZWImageCollectionViewCell.xib in Resources */,
 				17D662781E1B4B19002FF28A /* LaunchScreen.storyboard in Resources */,
+				173DE2981E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.xib in Resources */,
 				174CAE101E1DE78500300FD7 /* ZZWLoginViewController.xib in Resources */,
 				174082EB1E210A6300A007D8 /* ZZWProjectCardCell.xib in Resources */,
 				17D6629C1E1B4B32002FF28A /* Assets.xcassets in Resources */,
@@ -593,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173DE2971E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.swift in Sources */,
 				17D662A71E1B4F27002FF28A /* UIView+Extension.swift in Sources */,
 				17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */,
 				174082E81E210A6300A007D8 /* ZZWImageCollectionViewCell.swift in Sources */,
@@ -603,24 +641,30 @@
 				17D6626E1E1B4B19002FF28A /* AppDelegate.swift in Sources */,
 				174082ED1E210A9F00A007D8 /* ZZWVCManagerView.swift in Sources */,
 				174082E71E210A6300A007D8 /* ZZWHttpTool.swift in Sources */,
+				173DE29A1E35F060006A5C5D /* ZZWProjectTemplate.swift in Sources */,
 				174082EA1E210A6300A007D8 /* ZZWProjectCardCell.swift in Sources */,
+				173DE28B1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.swift in Sources */,
 				174CAE0F1E1DE78500300FD7 /* ZZWLoginViewController.swift in Sources */,
 				17D662A21E1B4BDA002FF28A /* Config.swift in Sources */,
 				17380C381E24E00200B59DEA /* ZZWFireViewController.swift in Sources */,
 				174082E21E210A6300A007D8 /* QSCImage.swift in Sources */,
+				173DE29C1E35F292006A5C5D /* ZZWRewardModel.swift in Sources */,
 				17380C3A1E24E04D00B59DEA /* ZZWBannerScrollView.swift in Sources */,
 				17D6629E1E1B4B91002FF28A /* ZZWTabBarController.swift in Sources */,
 				17380C361E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift in Sources */,
 				17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */,
 				174CAE121E1DF0E500300FD7 /* ZZWAccountTool.swift in Sources */,
 				174082E41E210A6300A007D8 /* ZZWHomePageViewController.swift in Sources */,
+				173DE28F1E35EE1C006A5C5D /* ZZWSaleDetailLogisticMoneyCell.swift in Sources */,
 				17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */,
 				173209761E2CADD2007C964C /* ZZWZhiBoViewController.swift in Sources */,
 				174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */,
 				1732097A1E2CB08C007C964C /* UIButton+Extension.swift in Sources */,
 				174082EF1E210AB700A007D8 /* ZZWPageManagerVC.swift in Sources */,
+				173DE2881E35E3A2006A5C5D /* ZZWSaleDetailViewController.swift in Sources */,
 				17D662A01E1B4BB4002FF28A /* ZZWTabBar.swift in Sources */,
 				174082E51E210A6300A007D8 /* ZZWHomeViewController.swift in Sources */,
+				173DE2931E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift in Sources */,
 				173209781E2CAE10007C964C /* ZZWHeadSegmentView.swift in Sources */,
 				174CAE141E1DF2AF00300FD7 /* ZZWAcconut.swift in Sources */,
 				174CAE161E1E19FF00300FD7 /* userInfo.swift in Sources */,

@@ -16,10 +16,20 @@ protocol  HeadSegmentViewDelegate:NSObjectProtocol {
 class ZZWHeadSegmentView: UIView {
     
     var  titleArray = Array<UIButton>()
+    
+//    var titlearr:Array<Any>?
+    
+    
     var  redLineView = UIView()
     var scroll = UIScrollView()
     weak var delegate:HeadSegmentViewDelegate?
     
+    
+//    convenience init(newtitleArray:Array<UIButton>,frame:CGRect){
+//        self.init()
+//        self.titlearr = newtitleArray
+//    }
+//    
     
     override init(frame: CGRect){
         super.init(frame: frame)

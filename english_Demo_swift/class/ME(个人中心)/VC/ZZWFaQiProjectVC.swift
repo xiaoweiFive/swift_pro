@@ -15,7 +15,7 @@ class ZZWFaQiProjectVC: UIViewController {
 
     var objArr = [ZZWObject]()
     let header = MJRefreshNormalHeader()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,15 +28,22 @@ class ZZWFaQiProjectVC: UIViewController {
         headerRefresh()
         
         
+        let width:CGFloat = SCREEN_WIDTH/5 * 2
+     btnhahha(frame: CGRect(x: 12.099, y: 323.324, width: 33.32, height: width*2))
+        
 //        //自定义对象读取
 //        let userDefault = UserDefaults.standard
 //        let myModelData = userDefault.data(forKey: "myModel")
 //        let myModel = NSKeyedUnarchiver.unarchiveObject(with: myModelData!) as! userInfo
 //        print(myModel.name)
 //        print(myModel.phone)
-        
     }
 
+    
+    func btnhahha(frame:CGRect)  {
+        let btn =  UIButton.init(frame:CGRect(x: frame.origin.x, y: frame.origin.x, width: frame.origin.x, height: frame.origin.x))
+        print(btn)
+    }
     
     
     
@@ -117,6 +124,22 @@ extension ZZWFaQiProjectVC:UITableViewDelegate,UITableViewDataSource{
         mycell.setImageCellData(projectModel: obj)
 
         return mycell
+    }
+    
+    
+
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let obj:ZZWObject = objArr[indexPath.row];
+        let saleDetailVc = ZZWSaleDetailViewController()
+        
+        print("------",obj.uuid)
+        
+        saleDetailVc.uuid = obj.uuid
+        saleDetailVc.template_id = "sale"
+
+        self.navigationController?.pushViewController(saleDetailVc, animated: true)
     }
     
 }
