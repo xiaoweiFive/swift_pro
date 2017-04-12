@@ -10,6 +10,7 @@ import UIKit
 
 protocol ZZWTabBarDelegate:NSObjectProtocol {
     func didTappedAddButton()
+    
 }
 
 
@@ -40,6 +41,7 @@ class ZZWTabBar: UITabBar {
                 if view.isKind(of: NSClassFromString("UIImageView")!) && view.bounds.size.height<=1 {
                     view.isHidden = true
                 }
+                
                 continue
             }
             let x = CGFloat(index>1 ? index+1 : index)*width
@@ -47,6 +49,7 @@ class ZZWTabBar: UITabBar {
             index += 1
         }
     }
+    
     
     /**
      处理tabBar子控件的事件响应

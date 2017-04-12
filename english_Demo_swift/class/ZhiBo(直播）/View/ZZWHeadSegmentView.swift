@@ -37,14 +37,16 @@ class ZZWHeadSegmentView: UIView {
         scroll.showsVerticalScrollIndicator = false
         scroll.showsHorizontalScrollIndicator = false
         scroll.backgroundColor = UIColor.randomColor()
-        
+
         redLineView = UIView.init()
         redLineView.backgroundColor = UIColor.randomColor()
+
         scroll.addSubview(redLineView)
         self.addSubview(scroll)
     }
     
     func sendData(array:Array<String>) {
+        
         var btnOffset:CGFloat = 0
         for i in 0...array.count-1 {
             let btn = UIButton.init(type: .custom)
@@ -53,7 +55,7 @@ class ZZWHeadSegmentView: UIView {
             btn.setTitleColor(UIColor.red, for: .selected)
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
             
-            let size = UIButton.sizeOfLabel(customMaxWidth: SCREEN_WIDTH, systemFontSize: 14, filledTextString: array[i])
+            let size = UIButton.sizeOfLabel(customMaxWidth: SCREEN_WIDTH, systemFontSize: 16, filledTextString: array[i])
             let originX = (i != 0 ? 15*2+btnOffset : 15);
             btn.frame = CGRect.init(x: originX, y: 14, width: size.width, height: size.height)
             btnOffset = btn.frame.maxX
@@ -65,6 +67,7 @@ class ZZWHeadSegmentView: UIView {
             
             if i == 0 {
                 btn.isSelected = true
+                btn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
                 redLineView.frame = CGRect.init(x: 15, y: scroll.height-2, width: btn.width, height: 2)
             }
         }
@@ -75,8 +78,11 @@ class ZZWHeadSegmentView: UIView {
     func changeSelectedItem(_ button:UIButton)  {
         for btn:UIButton in self.titleArray {
             btn.isSelected = false
+            btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         }
         button.isSelected = true
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+
         let array = self.titleArray as NSArray
         let index = array.index(of: button)
         UIView.animate(withDuration: 0.3) { 

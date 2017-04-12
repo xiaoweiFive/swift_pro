@@ -9,11 +9,14 @@
 import UIKit
 
 class ZZWTabBarController: UITabBarController{
+    
+    let tabbar = ZZWTabBar()
+    var lastSelectedIndex:NSInteger = 0
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tabbar = ZZWTabBar()
         tabbar.tabBarDelegate = self
         setValue(tabbar, forKey: "tabBar")
         tabbar.tintColor = COLOR_NAV_BG
@@ -22,7 +25,7 @@ class ZZWTabBarController: UITabBarController{
 
     
     fileprivate func setMyVC(){
-        let essenceVC1  = ZZWHomeViewController()
+        let essenceVC1  = ZZWHomeNavigationViewController()
         configChildViewController(childViewController: essenceVC1, title: "首页", imageName: "tabbar_video_icon_normal", selectedImage: "tabbar_video_icon_selected")
         
         let essenceVC2  = ZZWFireViewController()
@@ -64,9 +67,14 @@ extension ZZWTabBarController:UITabBarControllerDelegate{
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
         print(ZZWAccountTool.share.account?.userName ?? "11111111111111")
-        if (selectedIndex == 1 || selectedIndex == 2 || selectedIndex == 3  ) && (UserDefaults.standard.object(forKey: "usersAccount") == nil) {
+
+        
+        if (selectedIndex == 1 || selectedIndex == 2 || selectedIndex == 3  ) && !ZZWAccountTool.share.ZZWIsLogin() {
             presentLoginVc()
+            selectedIndex = lastSelectedIndex
+            return;
         }
+        lastSelectedIndex = selectedIndex;
     }
 }
 

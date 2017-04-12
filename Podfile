@@ -16,5 +16,12 @@ pod 'MJExtension'
 pod 'SDWebImage'
 pod 'SDCycleScrollView'
 
+pod 'ShareSDK3','3.4.2'
+pod 'MOBFoundation','2.0.11'
+pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+
+
 
 end

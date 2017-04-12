@@ -37,6 +37,8 @@ class ZZWSegmentViewController: UIViewController {
         table.scrollIndicatorInsets = UIEdgeInsets.init(top: 182, left: 0, bottom: 0, right: 0)
         return table
     }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,9 +56,11 @@ extension ZZWSegmentViewController: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellID = "cell"
@@ -71,11 +75,14 @@ extension ZZWSegmentViewController: UITableViewDelegate,UITableViewDataSource {
         
         return cell!
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
     }
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
     }
+    
 }

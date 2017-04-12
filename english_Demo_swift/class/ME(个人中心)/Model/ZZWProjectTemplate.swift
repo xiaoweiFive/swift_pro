@@ -16,14 +16,15 @@ class ZZWProjectTemplate: NSObject {
     var title: String?
     var desc: String?
     var location: String?
-    var cover: Array<Any>?
+//    var cover: Array<Any>?
     var brand: Array<Any>?
     
     var created_at: String?
     var updated_at: String?
     var expired_at: String?
     var state: String?
-    
+    var cover: [ZZWCover]?
+
     
     var stateDescription: String?
     var active: String?
@@ -49,6 +50,8 @@ class ZZWProjectTemplate: NSObject {
     
     override func mj_keyValuesDidFinishConvertingToObject() {
         self.reward = ZZWRewardModel.mj_objectArray(withKeyValuesArray: self.reward).copy() as? [ZZWRewardModel]
+        self.cover = ZZWCover.mj_objectArray(withKeyValuesArray: self.cover).copy() as? [ZZWCover]
+
     }
     
 }
