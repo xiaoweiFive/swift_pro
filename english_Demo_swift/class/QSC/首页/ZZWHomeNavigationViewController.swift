@@ -10,10 +10,25 @@ import UIKit
 
 class ZZWHomeNavigationViewController: ZZWBaseViewController {
     
+    var bannerCell:ZZWHomeBannerTableViewCell?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
         self.view.addSubview(tableView)
+        
+        let cellID:String = "ZZWHomeBannerTableViewCell"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+        if cell == nil {
+            cell = Bundle.main.loadNibNamed("ZZWHomeBannerTableViewCell", owner: self, options: nil)?.last as! ZZWHomeBannerTableViewCell
+            cell?.selectionStyle = .none
+        }
+
+        cell?.frame = CGRect(x: 0, y: -0.5, width: SCREEN_WIDTH, height: 160*RATE)
+        bannerCell = cell as! ZZWHomeBannerTableViewCell?;
+        self.view.addSubview(cell!)
+        
     }
     
     
@@ -53,12 +68,22 @@ class ZZWHomeNavigationViewController: ZZWBaseViewController {
             }
             
             let arr = json["data"].arrayObject as! [[String : AnyObject]]
-            
+     
             for dict in arr{
                 let topic = ZZWHomeNavModel()
                 topic.setValuesForKeys(dict )
                 self.indexModelArray.add(topic)
             }
+            
+            let homeNavModel:ZZWHomeNavModel = self.indexModelArray.firstObject as! ZZWHomeNavModel
+
+            
+            if homeNavModel.area == "banner" {
+                homeNavModel.currentVC = self
+                self.bannerCell?.setCellData(homeNavModel: homeNavModel)
+            }
+            
+            
             
             self.tableView.reloadData()
         }) { (error) in

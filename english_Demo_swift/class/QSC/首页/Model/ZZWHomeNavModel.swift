@@ -13,16 +13,17 @@ class ZZWHomeNavModel: NSObject {
     var area: String?
     var header: ZZWHomeHeader?
     var margin_bottom: String?
-    var list: [ZZWHomeListDesc]?
+    var list: [AnyObject]?
     var project_list: [ZZWProjectTemplate]?
-
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
+    var currentVC:ZZWHomeNavigationViewController?
     
-    override func mj_keyValuesDidFinishConvertingToObject() {
-        self.list = ZZWHomeListDesc.mj_objectArray(withKeyValuesArray: self.list).copy() as? [ZZWHomeListDesc]
-        self.project_list = ZZWProjectTemplate.mj_objectArray(withKeyValuesArray: self.project_list).copy() as? [ZZWProjectTemplate]
 
-    }
+//    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
+//    
+//    override func mj_keyValuesDidFinishConvertingToObject() {
+//        self.list = ZZWHomeListDesc.mj_objectArray(withKeyValuesArray: self.list).copy() as? [ZZWHomeListDesc]
+//        self.project_list = ZZWProjectTemplate.mj_objectArray(withKeyValuesArray: self.project_list).copy() as? [ZZWProjectTemplate]
+//    }
     
 }
 

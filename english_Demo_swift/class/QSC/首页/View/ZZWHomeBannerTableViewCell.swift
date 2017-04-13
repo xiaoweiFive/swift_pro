@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ZZWHomeBannerTableViewCell: UITableViewCell {
     
@@ -19,13 +20,46 @@ class ZZWHomeBannerTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
 
+    
     func setCellData(homeNavModel:ZZWHomeNavModel) {
         if self.pptvc == nil {
             print("fsafsafsadfas")
+            let pptvc = CorePPTVC()
+            self.pptvc = pptvc
+            self.contentView.addSubview(pptvc.view)
+            homeNavModel.currentVC?.addChildViewController(self.pptvc!)
         }
+        
+        var list = Array<Any>()
+        
+        for dict in homeNavModel.list! {
+            
+           let  desc = ZZWHomeListDesc()
+            desc.setValuesForKeys(dict as! [String : Any])
+            let model = PPTModel()
+            model.imageURLString = desc.image
+            model.gotoURLString = desc.url
+            list.append(model)
+        }
+        
+        self.pptvc?.pptModels = list
+        self.pptvc?.view.frame = self.contentView.bounds
+        
+        
+        
+        self.pptvc?.pptItemClickBlock = { (pptModel:PPTModel?) in
+            print("0000000000000000000000")
+            
+            print(pptModel?.gotoURLString)
+            
+            
+        }
+        self.pptvc?.clv.reloadData()
+        
+        
     }
-    
-
-    
+   
 }
