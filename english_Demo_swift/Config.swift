@@ -35,6 +35,7 @@ let COLOR_NAV_ITEM_NORMAL = UIColor(red:0.95, green:0.98, blue:1.00, alpha:1.00)
 let RATE = SCREEN_WIDTH/375.0
 
 let ZZWGrayColor = UIColor.init(r: 245, g: 246, b: 247)
+let QSCTextColor = UIColor.init(r: 67, g: 172, b: 67)
 
 func zzwColor(red: Int, green: Int, blue: Int, alpha: CGFloat) -> (UIColor){
     return UIColor(red: CGFloat(red)/CGFloat(255), green: CGFloat(green)/CGFloat(255), blue: CGFloat(blue)/CGFloat(255), alpha: alpha)

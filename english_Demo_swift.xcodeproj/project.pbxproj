@@ -49,6 +49,11 @@
 		17775E701E78F59B00E30720 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17775E6F1E78F59B00E30720 /* JavaScriptCore.framework */; };
 		17775E721E78F5C800E30720 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17775E711E78F5C800E30720 /* ImageIO.framework */; };
 		17775E741E78F5D200E30720 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17775E731E78F5D200E30720 /* libsqlite3.tbd */; };
+		17B366CB1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366C91EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.swift */; };
+		17B366CC1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B366CA1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.xib */; };
+		17B366CF1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366CD1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift */; };
+		17B366D01EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B366CE1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib */; };
+		17B366D21EA7609100B53FE0 /* ZZWBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366D11EA7609100B53FE0 /* ZZWBarButton.swift */; };
 		17D1580B1E9E0838003D5829 /* ZZWHomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D158091E9E0838003D5829 /* ZZWHomeNavigationViewController.swift */; };
 		17D1580C1E9E0838003D5829 /* ZZWHomeNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D1580A1E9E0838003D5829 /* ZZWHomeNavigationViewController.xib */; };
 		17D158101E9E1674003D5829 /* ZZWHomeNavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D1580F1E9E1674003D5829 /* ZZWHomeNavModel.swift */; };
@@ -199,6 +204,11 @@
 		17775E6F1E78F59B00E30720 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		17775E711E78F5C800E30720 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		17775E731E78F5D200E30720 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		17B366C91EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomeCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		17B366CA1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWHomeCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		17B366CD1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		17B366CE1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWHomeCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		17B366D11EA7609100B53FE0 /* ZZWBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBarButton.swift; sourceTree = "<group>"; };
 		17C139231E1CE6A4000BFAF9 /* bridgimg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgimg.h; sourceTree = "<group>"; };
 		17D158091E9E0838003D5829 /* ZZWHomeNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomeNavigationViewController.swift; sourceTree = "<group>"; };
 		17D1580A1E9E0838003D5829 /* ZZWHomeNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWHomeNavigationViewController.xib; sourceTree = "<group>"; };
@@ -579,6 +589,10 @@
 			children = (
 				17D158341E9E3259003D5829 /* ZZWHomeBannerTableViewCell.swift */,
 				17D158351E9E3259003D5829 /* ZZWHomeBannerTableViewCell.xib */,
+				17B366C91EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.swift */,
+				17B366CA1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.xib */,
+				17B366CD1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift */,
+				17B366CE1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -972,6 +986,7 @@
 				17D662B01E1B5D6A002FF28A /* ZZWBaseViewController.swift */,
 				174082DC1E210A6300A007D8 /* ZZWHttpTool.swift */,
 				17D6629F1E1B4BB4002FF28A /* ZZWTabBar.swift */,
+				17B366D11EA7609100B53FE0 /* ZZWBarButton.swift */,
 				17C139231E1CE6A4000BFAF9 /* bridgimg.h */,
 				174CAE0C1E1DE77200300FD7 /* login */,
 				17D662A31E1B4C39002FF28A /* Extension */,
@@ -1190,12 +1205,14 @@
 				17D158DE1E9E3363003D5829 /* D71B0FCA-8D09-423D-BB8A-D4614E973F2B.codesnippet in Resources */,
 				174082E91E210A6300A007D8 /* ZZWImageCollectionViewCell.xib in Resources */,
 				17D158E01E9E3363003D5829 /* EA467D07-0DA8-4A44-9496-2674C8D21C13.codesnippet in Resources */,
+				17B366CC1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.xib in Resources */,
 				17D662781E1B4B19002FF28A /* LaunchScreen.storyboard in Resources */,
 				17D158CE1E9E3363003D5829 /* 52ED5232-DDA6-43D4-868E-335AB2C5638C.codesnippet in Resources */,
 				17D158D71E9E3363003D5829 /* 95CE3D78-9606-430E-9B7F-C5BAD72D2D90.codesnippet in Resources */,
 				173DE2981E35EE55006A5C5D /* ZZWSaleDetailRewardInfoCell.xib in Resources */,
 				17D158371E9E3259003D5829 /* ZZWHomeBannerTableViewCell.xib in Resources */,
 				17D158DF1E9E3363003D5829 /* E872A8A5-F656-4EAB-8FA1-C5B1358C8BA6.codesnippet in Resources */,
+				17B366D01EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib in Resources */,
 				174CAE101E1DE78500300FD7 /* ZZWLoginViewController.xib in Resources */,
 				17D1582D1E9E320A003D5829 /* CorePPTVC.xib in Resources */,
 				174082EB1E210A6300A007D8 /* ZZWProjectCardCell.xib in Resources */,
@@ -1317,6 +1334,7 @@
 				17D158301E9E320A003D5829 /* PPTModel.m in Sources */,
 				17D158C21E9E3363003D5829 /* UIImage+TintColor.m in Sources */,
 				17380C361E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift in Sources */,
+				17B366D21EA7609100B53FE0 /* ZZWBarButton.swift in Sources */,
 				17D1582E1E9E320A003D5829 /* PPTConst.m in Sources */,
 				17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */,
 				17D158B41E9E3363003D5829 /* NSArray+Extend.m in Sources */,
@@ -1332,6 +1350,7 @@
 				17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */,
 				17D158BC1E9E3363003D5829 /* UIImage+Blur.m in Sources */,
 				173209761E2CADD2007C964C /* ZZWZhiBoViewController.swift in Sources */,
+				17B366CF1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift in Sources */,
 				17D1580B1E9E0838003D5829 /* ZZWHomeNavigationViewController.swift in Sources */,
 				174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */,
 				17D158311E9E320A003D5829 /* PPTCell.m in Sources */,
@@ -1347,6 +1366,7 @@
 				17D158C51E9E3363003D5829 /* UIWindow+Launch.m in Sources */,
 				174082E51E210A6300A007D8 /* ZZWHomeViewController.swift in Sources */,
 				173DE2931E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift in Sources */,
+				17B366CB1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.swift in Sources */,
 				173209781E2CAE10007C964C /* ZZWHeadSegmentView.swift in Sources */,
 				17D158C11E9E3363003D5829 /* UIImage+RTTint.m in Sources */,
 				174CAE141E1DF2AF00300FD7 /* ZZWAcconut.swift in Sources */,

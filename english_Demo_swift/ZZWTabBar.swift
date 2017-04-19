@@ -20,6 +20,7 @@ class ZZWTabBar: UITabBar {
         super.init(frame: frame)
         shadowImage = UIImage()
         addSubview(addButton)
+        addSubview(middleLabel)
     }
     
     weak var tabBarDelegate:ZZWTabBarDelegate?
@@ -41,7 +42,6 @@ class ZZWTabBar: UITabBar {
                 if view.isKind(of: NSClassFromString("UIImageView")!) && view.bounds.size.height<=1 {
                     view.isHidden = true
                 }
-                
                 continue
             }
             let x = CGFloat(index>1 ? index+1 : index)*width
@@ -66,6 +66,15 @@ class ZZWTabBar: UITabBar {
         return super.hitTest(point, with: event)
     }
     
+    
+    lazy var middleLabel:UILabel = {
+        let middleLabel = UILabel(frame: CGRect(x: SCREEN_WIDTH * 0.4, y: 30, width: SCREEN_WIDTH / 5, height: 10))
+        middleLabel.text = "发起"
+        middleLabel.textAlignment = .center
+        middleLabel.font = UIFont.systemFont(ofSize: 11)
+        middleLabel.textColor = COLOR_NAV_BG;
+        return middleLabel;
+    }()
     
     lazy var addButton:UIButton = {
        let addButton = UIButton(type: .custom)
