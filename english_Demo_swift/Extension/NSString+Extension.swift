@@ -26,4 +26,31 @@ extension String {
         return rect;
         
     }
+    
+    func StringToFloat(str:String)->(CGFloat){
+        
+        let string = str
+        var cgFloat: CGFloat = 0
+        
+        
+        if let doubleValue = Double(string)
+        {
+            cgFloat = CGFloat(doubleValue)
+        }
+        return cgFloat
+    }
+    
+    func stringToInt(str:String)->(Int){
+        
+        let string = str
+        var int: Int?
+        if let doubleValue = Int(string) {
+            int = Int(doubleValue)
+        }
+        if int == nil
+        {
+            return 0
+        }
+        return int!
+    }
 }

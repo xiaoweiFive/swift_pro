@@ -80,6 +80,6 @@ extension ZZWTabBarController:UITabBarControllerDelegate{
 
 extension ZZWTabBarController:ZZWTabBarDelegate{
     func didTappedAddButton() {
-        print("-=-=-=-=-=-=-=-=-=-=-=")
+        self.selectedIndex = 4;
     }
 }

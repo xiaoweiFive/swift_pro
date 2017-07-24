@@ -22,8 +22,6 @@ class ZZWHomeBannerTableViewCell: UITableViewCell {
     }
     
     
-
-    
     func setCellData(homeNavModel:ZZWHomeNavModel) {
         if self.pptvc == nil {
             print("fsafsafsadfas")
@@ -44,6 +42,8 @@ class ZZWHomeBannerTableViewCell: UITableViewCell {
             model.gotoURLString = desc.url
             list.append(model)
         }
+        
+        
         
         self.pptvc?.pptModels = list
         self.pptvc?.view.frame = self.contentView.bounds

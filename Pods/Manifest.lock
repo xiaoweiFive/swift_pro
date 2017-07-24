@@ -3,6 +3,8 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - HandyJSON (1.6.1)
+  - Kingfisher (3.6.1)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
@@ -23,6 +25,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - FMDB
+  - HandyJSON
+  - Kingfisher
   - MBProgressHUD (~> 1.0.0)
   - MJExtension
   - MJRefresh (~> 3.1.0)
@@ -38,6 +42,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HandyJSON: dcc98115467462a4749db81bc8a9052607600bdf
+  Kingfisher: 2f31cb75f3e98d3d4c406cbdcd9b263e956cfa67
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
@@ -47,6 +53,6 @@ SPEC CHECKSUMS:
   ShareSDK3: 2fa975dd22937fc7de3f6b5d0c41a18ba0dd1661
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 87b9dbd343209cb0b1ad15e55480f5c4774ba012
+PODFILE CHECKSUM: afc933f8e8e089155d55d1e326dc5af136a2160d
 
 COCOAPODS: 1.2.0.beta.3

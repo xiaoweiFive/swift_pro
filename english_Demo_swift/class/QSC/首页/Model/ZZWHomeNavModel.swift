@@ -17,13 +17,6 @@ class ZZWHomeNavModel: NSObject {
     var project_list: [ZZWProjectTemplate]?
     var currentVC:ZZWHomeNavigationViewController?
     
-
-//    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
-//    
-//    override func mj_keyValuesDidFinishConvertingToObject() {
-//        self.list = ZZWHomeListDesc.mj_objectArray(withKeyValuesArray: self.list).copy() as? [ZZWHomeListDesc]
-//        self.project_list = ZZWProjectTemplate.mj_objectArray(withKeyValuesArray: self.project_list).copy() as? [ZZWProjectTemplate]
-//    }
     
 }
 

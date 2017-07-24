@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170D75A01EA85F370086DC7E /* QSCMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D759F1EA85F370086DC7E /* QSCMainTabBarController.swift */; };
+		170D75A21EA88ACD0086DC7E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D75A11EA88ACD0086DC7E /* UIImage+Extension.swift */; };
+		170D75A41EA897930086DC7E /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D75A31EA897930086DC7E /* Int+Extension.swift */; };
 		173209761E2CADD2007C964C /* ZZWZhiBoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173209751E2CADD2007C964C /* ZZWZhiBoViewController.swift */; };
 		173209781E2CAE10007C964C /* ZZWHeadSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173209771E2CAE10007C964C /* ZZWHeadSegmentView.swift */; };
 		1732097A1E2CB08C007C964C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173209791E2CB08C007C964C /* UIButton+Extension.swift */; };
@@ -54,6 +57,8 @@
 		17B366CF1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366CD1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift */; };
 		17B366D01EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B366CE1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib */; };
 		17B366D21EA7609100B53FE0 /* ZZWBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366D11EA7609100B53FE0 /* ZZWBarButton.swift */; };
+		17B366D51EA7770200B53FE0 /* QSCBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366D41EA7770200B53FE0 /* QSCBarButton.swift */; };
+		17B366D71EA7773F00B53FE0 /* QSCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B366D61EA7773F00B53FE0 /* QSCTabBar.swift */; };
 		17D1580B1E9E0838003D5829 /* ZZWHomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D158091E9E0838003D5829 /* ZZWHomeNavigationViewController.swift */; };
 		17D1580C1E9E0838003D5829 /* ZZWHomeNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D1580A1E9E0838003D5829 /* ZZWHomeNavigationViewController.xib */; };
 		17D158101E9E1674003D5829 /* ZZWHomeNavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D1580F1E9E1674003D5829 /* ZZWHomeNavModel.swift */; };
@@ -141,6 +146,14 @@
 		17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662AC1E1B53BE002FF28A /* ZZWNavigationViewController.swift */; };
 		17D662AF1E1B5735002FF28A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662AE1E1B5735002FF28A /* UIBarButtonItem+Extension.swift */; };
 		17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D662B01E1B5D6A002FF28A /* ZZWBaseViewController.swift */; };
+		17FB9A071F2602AB00017F81 /* PhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB99FF1F2602AB00017F81 /* PhotoBrowser.swift */; };
+		17FB9A081F2602AB00017F81 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A001F2602AB00017F81 /* PhotoBrowserCell.swift */; };
+		17FB9A091F2602AB00017F81 /* PhotoBrowserDefaultPageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A011F2602AB00017F81 /* PhotoBrowserDefaultPageControlDelegate.swift */; };
+		17FB9A0A1F2602AB00017F81 /* PhotoBrowserLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A021F2602AB00017F81 /* PhotoBrowserLayout.swift */; };
+		17FB9A0B1F2602AB00017F81 /* PhotoBrowserNumberPageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A031F2602AB00017F81 /* PhotoBrowserNumberPageControlDelegate.swift */; };
+		17FB9A0C1F2602AB00017F81 /* PhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A041F2602AB00017F81 /* PhotoBrowserProgressView.swift */; };
+		17FB9A0D1F2602AB00017F81 /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A051F2602AB00017F81 /* ScaleAnimator.swift */; };
+		17FB9A0E1F2602AB00017F81 /* ScaleAnimatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB9A061F2602AB00017F81 /* ScaleAnimatorCoordinator.swift */; };
 		F5DE4CED403990FB64F3EB19 /* Pods_english_Demo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E727E7E015BD3E8C429A6AB5 /* Pods_english_Demo_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +175,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170D759F1EA85F370086DC7E /* QSCMainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCMainTabBarController.swift; sourceTree = "<group>"; };
+		170D75A11EA88ACD0086DC7E /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		170D75A31EA897930086DC7E /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		173209751E2CADD2007C964C /* ZZWZhiBoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWZhiBoViewController.swift; sourceTree = "<group>"; };
 		173209771E2CAE10007C964C /* ZZWHeadSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHeadSegmentView.swift; sourceTree = "<group>"; };
 		173209791E2CB08C007C964C /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -209,6 +225,8 @@
 		17B366CD1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		17B366CE1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWHomeCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		17B366D11EA7609100B53FE0 /* ZZWBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBarButton.swift; sourceTree = "<group>"; };
+		17B366D41EA7770200B53FE0 /* QSCBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCBarButton.swift; sourceTree = "<group>"; };
+		17B366D61EA7773F00B53FE0 /* QSCTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSCTabBar.swift; sourceTree = "<group>"; };
 		17C139231E1CE6A4000BFAF9 /* bridgimg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgimg.h; sourceTree = "<group>"; };
 		17D158091E9E0838003D5829 /* ZZWHomeNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWHomeNavigationViewController.swift; sourceTree = "<group>"; };
 		17D1580A1E9E0838003D5829 /* ZZWHomeNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZWHomeNavigationViewController.xib; sourceTree = "<group>"; };
@@ -344,6 +362,14 @@
 		17D662AC1E1B53BE002FF28A /* ZZWNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWNavigationViewController.swift; sourceTree = "<group>"; };
 		17D662AE1E1B5735002FF28A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		17D662B01E1B5D6A002FF28A /* ZZWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZWBaseViewController.swift; sourceTree = "<group>"; };
+		17FB99FF1F2602AB00017F81 /* PhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowser.swift; sourceTree = "<group>"; };
+		17FB9A001F2602AB00017F81 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
+		17FB9A011F2602AB00017F81 /* PhotoBrowserDefaultPageControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserDefaultPageControlDelegate.swift; sourceTree = "<group>"; };
+		17FB9A021F2602AB00017F81 /* PhotoBrowserLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserLayout.swift; sourceTree = "<group>"; };
+		17FB9A031F2602AB00017F81 /* PhotoBrowserNumberPageControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserNumberPageControlDelegate.swift; sourceTree = "<group>"; };
+		17FB9A041F2602AB00017F81 /* PhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserProgressView.swift; sourceTree = "<group>"; };
+		17FB9A051F2602AB00017F81 /* ScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimator.swift; sourceTree = "<group>"; };
+		17FB9A061F2602AB00017F81 /* ScaleAnimatorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimatorCoordinator.swift; sourceTree = "<group>"; };
 		61138CF819C0FB8855E3BA7E /* Pods-english_Demo_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-english_Demo_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-english_Demo_swift/Pods-english_Demo_swift.release.xcconfig"; sourceTree = "<group>"; };
 		CDD1FACF208BC9F6856CFE57 /* Pods-english_Demo_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-english_Demo_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-english_Demo_swift/Pods-english_Demo_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E727E7E015BD3E8C429A6AB5 /* Pods_english_Demo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_english_Demo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -554,6 +580,16 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		17B366D31EA776EE00B53FE0 /* 轻松筹 */ = {
+			isa = PBXGroup;
+			children = (
+				17B366D41EA7770200B53FE0 /* QSCBarButton.swift */,
+				17B366D61EA7773F00B53FE0 /* QSCTabBar.swift */,
+				170D759F1EA85F370086DC7E /* QSCMainTabBarController.swift */,
+			);
+			path = "轻松筹";
+			sourceTree = "<group>";
+		};
 		17D158071E9E07E3003D5829 /* QSC */ = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +636,7 @@
 		17D158171E9E3209003D5829 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				17FB99FD1F2602AB00017F81 /* 图片预览 */,
 				17D158401E9E3363003D5829 /* FrameWork */,
 				17D158181E9E3209003D5829 /* CorePPTVC */,
 			);
@@ -987,6 +1024,7 @@
 				174082DC1E210A6300A007D8 /* ZZWHttpTool.swift */,
 				17D6629F1E1B4BB4002FF28A /* ZZWTabBar.swift */,
 				17B366D11EA7609100B53FE0 /* ZZWBarButton.swift */,
+				17B366D31EA776EE00B53FE0 /* 轻松筹 */,
 				17C139231E1CE6A4000BFAF9 /* bridgimg.h */,
 				174CAE0C1E1DE77200300FD7 /* login */,
 				17D662A31E1B4C39002FF28A /* Extension */,
@@ -1022,6 +1060,8 @@
 				17D662A61E1B4F27002FF28A /* UIView+Extension.swift */,
 				17D662AE1E1B5735002FF28A /* UIBarButtonItem+Extension.swift */,
 				173209791E2CB08C007C964C /* UIButton+Extension.swift */,
+				170D75A11EA88ACD0086DC7E /* UIImage+Extension.swift */,
+				170D75A31EA897930086DC7E /* Int+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1036,6 +1076,29 @@
 				17380C311E24DF4200B59DEA /* ZhiBo(直播） */,
 			);
 			path = class;
+			sourceTree = "<group>";
+		};
+		17FB99FD1F2602AB00017F81 /* 图片预览 */ = {
+			isa = PBXGroup;
+			children = (
+				17FB99FE1F2602AB00017F81 /* PhotoBrowser */,
+			);
+			path = "图片预览";
+			sourceTree = "<group>";
+		};
+		17FB99FE1F2602AB00017F81 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				17FB99FF1F2602AB00017F81 /* PhotoBrowser.swift */,
+				17FB9A001F2602AB00017F81 /* PhotoBrowserCell.swift */,
+				17FB9A011F2602AB00017F81 /* PhotoBrowserDefaultPageControlDelegate.swift */,
+				17FB9A021F2602AB00017F81 /* PhotoBrowserLayout.swift */,
+				17FB9A031F2602AB00017F81 /* PhotoBrowserNumberPageControlDelegate.swift */,
+				17FB9A041F2602AB00017F81 /* PhotoBrowserProgressView.swift */,
+				17FB9A051F2602AB00017F81 /* ScaleAnimator.swift */,
+				17FB9A061F2602AB00017F81 /* ScaleAnimatorCoordinator.swift */,
+			);
+			path = PhotoBrowser;
 			sourceTree = "<group>";
 		};
 		9C45A85F79AE1EB2F95F6971 /* Frameworks */ = {
@@ -1297,11 +1360,14 @@
 				17D662AD1E1B53BE002FF28A /* ZZWNavigationViewController.swift in Sources */,
 				17D158E91E9E3363003D5829 /* Reachability.m in Sources */,
 				17D158E81E9E3363003D5829 /* CoreStatus.m in Sources */,
+				170D75A41EA897930086DC7E /* Int+Extension.swift in Sources */,
 				17D158E61E9E3363003D5829 /* UIButton+SD.m in Sources */,
+				17FB9A0A1F2602AB00017F81 /* PhotoBrowserLayout.swift in Sources */,
 				174082E81E210A6300A007D8 /* ZZWImageCollectionViewCell.swift in Sources */,
 				1732097C1E2CC923007C964C /* ZZWSegmentViewController.swift in Sources */,
 				17380C3C1E24E20D00B59DEA /* ZZWBannerModel.swift in Sources */,
 				174082F11E21279700A007D8 /* NSString+Extension.swift in Sources */,
+				170D75A21EA88ACD0086DC7E /* UIImage+Extension.swift in Sources */,
 				17D662A51E1B4C4E002FF28A /* UIColor+Extension.swift in Sources */,
 				17D158BB1E9E3363003D5829 /* UIFont+Extend.m in Sources */,
 				17D1582F1E9E320A003D5829 /* PPTLayout.m in Sources */,
@@ -1311,14 +1377,18 @@
 				174082ED1E210A9F00A007D8 /* ZZWVCManagerView.swift in Sources */,
 				17D158101E9E1674003D5829 /* ZZWHomeNavModel.swift in Sources */,
 				174082E71E210A6300A007D8 /* ZZWHttpTool.swift in Sources */,
+				17FB9A081F2602AB00017F81 /* PhotoBrowserCell.swift in Sources */,
 				173DE29A1E35F060006A5C5D /* ZZWProjectTemplate.swift in Sources */,
+				17FB9A0B1F2602AB00017F81 /* PhotoBrowserNumberPageControlDelegate.swift in Sources */,
 				174082EA1E210A6300A007D8 /* ZZWProjectCardCell.swift in Sources */,
 				173DE28B1E35EDFF006A5C5D /* ZZWSaleDetailTitleCell.swift in Sources */,
+				17FB9A071F2602AB00017F81 /* PhotoBrowser.swift in Sources */,
 				174CAE0F1E1DE78500300FD7 /* ZZWLoginViewController.swift in Sources */,
 				17D662A21E1B4BDA002FF28A /* Config.swift in Sources */,
 				17D158B21E9E3363003D5829 /* CALayer+Anim.m in Sources */,
 				17D158B31E9E3363003D5829 /* CALayer+Transition.m in Sources */,
 				17380C381E24E00200B59DEA /* ZZWFireViewController.swift in Sources */,
+				17FB9A091F2602AB00017F81 /* PhotoBrowserDefaultPageControlDelegate.swift in Sources */,
 				17D158C31E9E3363003D5829 /* UITableViewCell+Extend.m in Sources */,
 				17D158B61E9E3363003D5829 /* NSObject+Extend.m in Sources */,
 				17D15A491E9E37B0003D5829 /* UIImage+Color.m in Sources */,
@@ -1334,6 +1404,7 @@
 				17D158301E9E320A003D5829 /* PPTModel.m in Sources */,
 				17D158C21E9E3363003D5829 /* UIImage+TintColor.m in Sources */,
 				17380C361E24DFAF00B59DEA /* ZZWFaQiProjectVC.swift in Sources */,
+				17FB9A0C1F2602AB00017F81 /* PhotoBrowserProgressView.swift in Sources */,
 				17B366D21EA7609100B53FE0 /* ZZWBarButton.swift in Sources */,
 				17D1582E1E9E320A003D5829 /* PPTConst.m in Sources */,
 				17D662B11E1B5D6A002FF28A /* ZZWBaseViewController.swift in Sources */,
@@ -1351,6 +1422,7 @@
 				17D158BC1E9E3363003D5829 /* UIImage+Blur.m in Sources */,
 				173209761E2CADD2007C964C /* ZZWZhiBoViewController.swift in Sources */,
 				17B366CF1EA7513A00B53FE0 /* ZZWHomeCategoryCollectionViewCell.swift in Sources */,
+				17B366D71EA7773F00B53FE0 /* QSCTabBar.swift in Sources */,
 				17D1580B1E9E0838003D5829 /* ZZWHomeNavigationViewController.swift in Sources */,
 				174082E31E210A6300A007D8 /* ZZWObject.swift in Sources */,
 				17D158311E9E320A003D5829 /* PPTCell.m in Sources */,
@@ -1359,11 +1431,15 @@
 				17D158B81E9E3363003D5829 /* NSString+Password.m in Sources */,
 				1732097A1E2CB08C007C964C /* UIButton+Extension.swift in Sources */,
 				174082EF1E210AB700A007D8 /* ZZWPageManagerVC.swift in Sources */,
+				17FB9A0E1F2602AB00017F81 /* ScaleAnimatorCoordinator.swift in Sources */,
 				17D158141E9E1CEE003D5829 /* ZZWCover.swift in Sources */,
 				173DE2881E35E3A2006A5C5D /* ZZWSaleDetailViewController.swift in Sources */,
+				17B366D51EA7770200B53FE0 /* QSCBarButton.swift in Sources */,
 				17D158161E9E2B1F003D5829 /* ZZWtest.swift in Sources */,
 				17D662A01E1B4BB4002FF28A /* ZZWTabBar.swift in Sources */,
+				17FB9A0D1F2602AB00017F81 /* ScaleAnimator.swift in Sources */,
 				17D158C51E9E3363003D5829 /* UIWindow+Launch.m in Sources */,
+				170D75A01EA85F370086DC7E /* QSCMainTabBarController.swift in Sources */,
 				174082E51E210A6300A007D8 /* ZZWHomeViewController.swift in Sources */,
 				173DE2931E35EE39006A5C5D /* ZZWSaleDetailUserNameCell.swift in Sources */,
 				17B366CB1EA7507100B53FE0 /* ZZWHomeCategoryTableViewCell.swift in Sources */,
@@ -1519,7 +1595,7 @@
 				INFOPLIST_FILE = english_Demo_swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhangzhenwei;
+				PRODUCT_BUNDLE_IDENTIFIER = zhenweizhang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = english_Demo_swift/bridgimg.h;
 				SWIFT_VERSION = 3.0;
@@ -1535,7 +1611,7 @@
 				INFOPLIST_FILE = english_Demo_swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhangzhenwei;
+				PRODUCT_BUNDLE_IDENTIFIER = zhenweizhang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = english_Demo_swift/bridgimg.h;
 				SWIFT_VERSION = 3.0;

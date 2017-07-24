@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class ZZWHomeNavigationViewController: ZZWBaseViewController {
     
@@ -72,7 +73,7 @@ class ZZWHomeNavigationViewController: ZZWBaseViewController {
                 homeNavModel.currentVC = self
                 self.bannerCell?.setCellData(homeNavModel: homeNavModel)
             }
-
+            
             self.tableView.reloadData()
         }) { (error) in
             print(error)

@@ -15,6 +15,8 @@ pod 'MBProgressHUD', '~> 1.0.0'
 pod 'MJExtension'
 pod 'SDWebImage'
 pod 'SDCycleScrollView'
+pod 'HandyJSON'
+pod 'Kingfisher'
 
 pod 'ShareSDK3','3.4.2'
 pod 'MOBFoundation','2.0.11'
